@@ -1,0 +1,124 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+// .form-signin .checkbox {
+//   font-weight: 400;
+// }
+
+// .form-signin .form-floating:focus-within {
+//   z-index: 2;
+// }
+
+.form-signin input {
+	margin-bottom: 5px;
+	border-radius: 20px;
+	background-color: transparent;
+	color: antiquewhite;
+	text-decoration-color: aliceblue;
+}
+
+// body {
+//   align-items: center;
+//   background-image: url("../../images/suites.jpg  ");
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-attachment: fixed;
+
+//   background-blend-mode: overlay; /* Add blend mode to create the overlay */
+//   background-color: rgba(0, 0, 0, 0.5);
+// }
+
+.row label {
+	padding-left: 1.5rem;
+	/* Adjust the padding for the floating labels as needed */
+}
+
+.loginpage {
+	background-color: rgba(14, 120, 242, 0.055);
+	border-radius: 16px;
+	box-shadow: 0 4px 30px rgba(69, 173, 247, 0.1);
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	box-shadow: rgba(38, 153, 251, 0.4) 0px 7px 29px 0px;
+
+	height: 75vh;
+	background-blend-mode: multiply; /* Add blend mode to create the overlay */
+
+	//
+	margin: 10vw;
+	margin-top: 150px;
+	border-radius: 20px;
+
+	margin-bottom: 200px;
+
+	.flex-container {
+		margin-top: 0;
+		display: flex;
+		flex-wrap: wrap;
+		height: inherit;
+		align-items: center;
+		align-content: center;
+		padding: 20px;
+		@include media-breakpoint-only(md) {
+			flex-wrap: nowrap;
+			align-content: space-between;
+			.img {
+				height: 50%;
+			}
+		}
+		.rtltext {
+			width: 50%;
+			float: left;
+			padding: 10px;
+
+			@include media-breakpoint-only(md) {
+				width: 100%;
+				.img-fluid {
+					height: 100%;
+				}
+			}
+
+			@include media-breakpoint-down(md) {
+				display: none;
+			}
+			h3 {
+				color: azure;
+			}
+		}
+		.form-signin {
+			max-width: 400px;
+			padding: 15px;
+			height: 100%;
+			margin: auto;
+			width: 100%;
+
+			float: right;
+			color: aliceblue;
+
+			.btn {
+				background-color: $secondary;
+				font-weight: bold;
+			}
+			form {
+				margin-top: 0;
+				width: 100%;
+			}
+		}
+	}
+
+	.vertical-rule {
+		position: relative;
+		width: 2px; /* Set the width of the vertical line */
+		margin-top: 20px;
+		margin-bottom: 20px;
+		height: 400px; /* Set the height of the vertical line */
+		align-items: center;
+		align-content: center;
+		background-color: #f5f0f096;
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
+	}
+}

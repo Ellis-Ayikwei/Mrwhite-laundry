@@ -1,0 +1,152 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+#contactus {
+	position: relative;
+	font-family: "gilroy";
+	width: 100%;
+
+	.leave-review form input:active {
+		border: none !important;
+	}
+
+	.leave-review input:active,
+	.leave-review textarea:active {
+		border-color: white;
+
+		border-bottom: 2px solid white;
+		border: none !important;
+		border-bottom: 2px solid white;
+		padding: 5px;
+		color: white !important;
+	}
+
+	.leave-review input::placeholder,
+	.leave-review textarea::placeholder {
+		color: white;
+	}
+
+	.flexcontainer {
+		padding: 20px;
+		margin-left: 0;
+		margin-top: 10vh;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		@include media-breakpoint-down(sm) {
+			margin-top: 0;
+
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			padding: 10px;
+		}
+
+		.box1 {
+			flex-direction: row;
+
+			flex-wrap: wrap;
+			display: flex;
+			align-items: center;
+			flex-basis: content;
+
+			@include media-breakpoint-up(md) {
+				margin-right: 20px;
+			}
+			@include media-breakpoint-down(sm) {
+				flex-direction: column;
+			}
+
+			.box0 {
+				width: 300px;
+				height: 200px;
+				margin: 10px;
+				color: #000 !important;
+				border-radius: 19px;
+				text-align: center;
+				align-items: center;
+				font-weight: 900;
+				font-size: larger;
+				background-color: rgba(255, 253, 253, 0);
+				backdrop-filter: blur(3.3px);
+				-webkit-backdrop-filter: blur(5.3px);
+				border: 1px solid rgba(22, 119, 255, 0.13);
+				i {
+					color: #000;
+				}
+				box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+					rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+					rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+				@include media-breakpoint-down(sm) {
+					width: 300px;
+					height: 200px;
+				}
+			}
+		}
+		.box2 {
+			display: flex;
+			justify-content: center;
+			border-radius: 19px;
+			padding-left: 50px;
+			padding-right: 50px;
+			flex-wrap: wrap;
+			align-items: center;
+			background: rgb(7, 121, 218);
+			background: radial-gradient(
+				farthest-side,
+				rgb(1, 88, 122) 0%,
+				rgba(1, 40, 117, 1) 150%
+			);
+			@include media-breakpoint-down(sm) {
+				flex-direction: column;
+			}
+			.leave-review {
+				display: block;
+				flex-wrap: wrap;
+				align-items: center;
+				align-content: center;
+				justify-content: space-between;
+
+				//border: 3px solid $primary;
+				position: relative !important;
+			}
+
+			.leave-review form {
+				display: flex;
+				flex-direction: column;
+				color: white !important;
+				justify-content: space-between;
+
+				input {
+					background-color: transparent;
+					border-bottom: 2px solid white;
+					border: none; /* Remove all borders */
+					border-bottom: 2px solid white;
+					padding: 5px;
+					color: white !important;
+				}
+
+				.w-100 {
+					background-color: $secondary;
+					font-weight: bold;
+					box-shadow: rgba(60, 60, 60, 0.342) 0px 7px 29px 0px;
+					outline: none;
+					border: none;
+					color: aliceblue;
+				}
+
+				textarea {
+					background-color: transparent;
+					border: 2px solid white;
+					padding: 5px;
+					color: white;
+					border-radius: 12px;
+					resize: none;
+				}
+			}
+		}
+	}
+}
