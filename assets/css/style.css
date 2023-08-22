@@ -13293,7 +13293,7 @@ textarea.form-control-lg {
 }
 .carus2 .card .ribbon {
   position: absolute;
-  right: -15px;
+  right: -6px;
   top: -10px;
   z-index: 1;
   overflow: hidden;
@@ -13302,7 +13302,7 @@ textarea.form-control-lg {
   text-align: right;
 }
 .carus2 .card .ribbon span {
-  font-size: 5px;
+  font-size: 9px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
