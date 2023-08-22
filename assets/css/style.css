@@ -12185,8 +12185,10 @@ textarea.form-control-lg {
 }
 @media (max-width: 575.98px) {
   .services {
-    margin-top: 300px;
-    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content: center;
+    align-content: center !important;
   }
   .services .text-end,
   .services .text-start {
@@ -12233,6 +12235,7 @@ textarea.form-control-lg {
   .services .myDIV {
     margin-top: 50%;
     padding-bottom: 30px;
+    width: 90vw;
   }
 }
 @media (min-width: 768px) {
@@ -12346,6 +12349,7 @@ textarea.form-control-lg {
   .services .myDIV1 {
     margin-top: 50%;
     padding-bottom: 30px;
+    width: 90vw;
   }
 }
 @media (min-width: 768px) {
@@ -12806,12 +12810,47 @@ textarea.form-control-lg {
 .flex-container .reviews .reviews-container .card {
   border: 2px solid #2699fb;
 }
+.flex-container .reviews .reviews-container .card img {
+  width: 60px;
+  height: 30px;
+}
+.flex-container .reviews .reviews-container .card .row1 {
+  display: flex;
+  align-items: center !important;
+  align-content: center;
+  flex-wrap: wrap;
+  margin: 0 !important;
+  width: 100%;
+  padding: 0;
+}
+.flex-container .reviews .reviews-container .card .row1 .f2 {
+  flex: 2;
+  align-items: center !important;
+  padding: 0;
+  margin: 0;
+}
+.flex-container .reviews .reviews-container .card .row1 p {
+  flex: 1;
+}
 .flex-container .reviews .reviews-container .reply {
   border: 1px solid #2699fb !important;
   color: rgb(29, 61, 116);
   font-family: "Monserat";
   font-weight: 500;
   background-color: rgb(179, 207, 247);
+}
+@media (max-width: 575.98px) {
+  .flex-container .reviews .reviews-container {
+    font-size: 0.6rem;
+  }
+  .flex-container .reviews .reviews-container .btn {
+    font-size: 0.6rem;
+    padding: 2px;
+  }
+  .flex-container .reviews .reviews-container img {
+    width: 60px;
+    height: 30px;
+  }
 }
 .flex-container .leave-review {
   display: block;
@@ -13217,10 +13256,41 @@ textarea.form-control-lg {
   border-bottom-left-radius: 80px !important;
   border-bottom-right-radius: 80px !important;
 }
+@media (max-width: 575.98px) {
+  .carus2 .card {
+    width: 6rem !important;
+    height: 10rem !important;
+    font-size: 1rem !important;
+    padding: 0;
+  }
+  .carus2 .card .card-header {
+    margin: 0 !important;
+  }
+  .carus2 .card .card-body {
+    padding: 10px;
+    align-items: center;
+  }
+  .carus2 .card h4 {
+    font-size: 0.6rem;
+    background: rgb(122, 32, 0);
+    background: linear-gradient(286deg, rgb(122, 32, 0) 0%, rgb(247, 88, 53) 100%);
+  }
+  .carus2 .card h2 {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  .carus2 .card p {
+    font-size: 0.6rem;
+  }
+  .carus2 .card hr {
+    margin: 5px;
+  }
+}
 .carus2 .card .ribbon {
   position: absolute;
-  right: -5px;
-  top: -5px;
+  right: -15px;
+  top: -10px;
   z-index: 1;
   overflow: hidden;
   width: 75px;
@@ -13228,7 +13298,7 @@ textarea.form-control-lg {
   text-align: right;
 }
 .carus2 .card .ribbon span {
-  font-size: 10px;
+  font-size: 5px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;

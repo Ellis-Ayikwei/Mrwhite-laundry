@@ -7,11 +7,10 @@
 	//padding: 1rem 0;
 
 	@include media-breakpoint-down(sm) {
-		margin-top: 300px;
-		// .servicesgh {
-		//   margin-bottom: 200px;
-		// }
-		align-items: center;
+		margin-right: 10px;
+		margin-left: 10px;
+		justify-content: center;
+		align-content: center !important;
 
 		.text-end,
 		.text-start {
@@ -62,6 +61,7 @@
 		@include media-breakpoint-down(sm) {
 			margin-top: 50%;
 			padding-bottom: 30px;
+			width: 90vw;
 		}
 
 		@include media-breakpoint-up(md) {
@@ -177,6 +177,7 @@
 		@include media-breakpoint-down(sm) {
 			margin-top: 50%;
 			padding-bottom: 30px;
+			width: 90vw;
 		}
 
 		@include media-breakpoint-up(md) {

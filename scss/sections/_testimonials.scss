@@ -82,8 +82,37 @@
 			border-radius: 5px;
 			padding: 10px;
 			font-weight: 500;
+
 			.card {
 				border: 2px solid $primary;
+				img {
+					width: 60px;
+					height: 30px;
+				}
+
+				.row1 {
+					display: flex;
+					// flex-direction: row;
+					align-items: center !important;
+					align-content: center;
+					flex-wrap: wrap;
+					margin: 0 !important;
+					width: 100%;
+					padding: 0;
+					.f1 {
+					}
+					.f2 {
+						flex: 2;
+						align-items: center !important;
+						padding: 0;
+						margin: 0;
+					}
+					.row {
+					}
+					p {
+						flex: 1;
+					}
+				}
 			}
 			.reply {
 				border: 1px solid $primary !important;
@@ -91,6 +120,19 @@
 				font-family: "Monserat";
 				font-weight: 500;
 				background-color: rgb(179, 207, 247);
+			}
+
+			@include media-breakpoint-down(sm) {
+				font-size: 0.6rem;
+				.btn {
+					font-size: 0.6rem;
+					padding: 2px;
+				}
+
+				img {
+					width: 60px;
+					height: 30px;
+				}
 			}
 		}
 	}

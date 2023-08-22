@@ -81,10 +81,39 @@
 		border: none;
 		overflow: hidden;
 		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+		@include media-breakpoint-down(sm) {
+			width: 6rem !important;
+			height: 10rem !important;
+			font-size: 1rem !important;
+			padding: 0;
+			.card-header {
+				margin: 0 !important;
+			}
+			.card-body {
+				padding: 10px;
+				align-items: center;
+			}
+			h4 {
+				font-size: 0.6rem;
+				@include gradient4;
+			}
+			h2 {
+				font-size: 0.9rem;
+				font-weight: bold;
+				margin-bottom: 0;
+			}
+			p {
+				font-size: 0.6rem;
+			}
+			hr {
+				margin: 5px;
+			}
+		}
+
 		.ribbon {
 			position: absolute;
-			right: -5px;
-			top: -5px;
+			right: -15px;
+			top: -10px;
 			z-index: 1;
 			overflow: hidden;
 			width: 75px;
@@ -92,7 +121,7 @@
 			text-align: right;
 		}
 		.ribbon span {
-			font-size: 10px;
+			font-size: 5px;
 			font-weight: bold;
 			color: #fff;
 			text-transform: uppercase;
