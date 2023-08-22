@@ -82,7 +82,10 @@
 			border-radius: 5px;
 			padding: 10px;
 			font-weight: 500;
-
+			p {
+				margin-top: 0;
+				margin-bottom: 1rem;
+			}
 			.card {
 				border: 2px solid $primary;
 				img {
