@@ -40,31 +40,23 @@
 		width: fit-content;
 	}
 
-	.navbar-toggler {
-		background-color: $primary;
-	}
-
-	.navbar-toggler-icon {
-		background-color: transparent;
-	}
-}
-
-.navbar-nav {
-	@include media-breakpoint-down(md) {
-		padding: 0.2rem;
-		display: block;
-		overflow-y: scroll;
-		height: 120px;
-	}
-
-	.container {
+	.navbar-nav {
 		@include media-breakpoint-down(md) {
-			font-size: small;
 			padding: 0.2rem;
 			display: block;
-			max-height: auto;
 			overflow-y: scroll;
-			height: 100px;
+			height: 120px;
+		}
+
+		.container {
+			@include media-breakpoint-down(md) {
+				font-size: small;
+				padding: 0.2rem;
+				display: block;
+				max-height: auto;
+				overflow-y: scroll;
+				height: 100px;
+			}
 		}
 	}
 }

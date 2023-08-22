@@ -12513,7 +12513,7 @@ textarea.form-control-lg {
   margin-top: 20vh;
   margin-bottom: 10vh;
   justify-content: center;
-  background-image: url("/images/svgs/bg-7.svg");
+  background-image: url("../../images/svgs/bg-22.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: border-box;
@@ -12996,15 +12996,8 @@ textarea.form-control-lg {
   background-color: none;
   width: fit-content;
 }
-.menu .navbar-toggler {
-  background-color: #2699fb;
-}
-.menu .navbar-toggler-icon {
-  background-color: transparent;
-}
-
 @media (max-width: 767.98px) {
-  .navbar-nav {
+  .menu .navbar-nav {
     padding: 0.2rem;
     display: block;
     overflow-y: scroll;
@@ -13012,7 +13005,7 @@ textarea.form-control-lg {
   }
 }
 @media (max-width: 767.98px) {
-  .navbar-nav .container {
+  .menu .navbar-nav .container {
     font-size: small;
     padding: 0.2rem;
     display: block;
@@ -13186,7 +13179,7 @@ textarea.form-control-lg {
   margin-top: 20vh;
   margin-bottom: 10vh;
   justify-content: center;
-  background-image: url("/images/svgs/bg-2.svg");
+  background-image: url("../../images/svgs/bg-2.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-clip: border-box;
