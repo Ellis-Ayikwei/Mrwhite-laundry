@@ -21,9 +21,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       // Review inserted successfully
       header("Location: index.php");
       exit();
-  } else {
-      echo "Error: " . $stmt->error;
-  }
+//   } else {
+//       echo "Error: " . $stmt->error;
+//   }
 
   $stmt->close();
 }
