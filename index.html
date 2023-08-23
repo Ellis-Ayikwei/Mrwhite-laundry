@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 // Database connection
 include "connectconfig.php";
 
@@ -33,7 +33,7 @@ $sql = "SELECT * FROM Customerreviews ORDER BY timestamp DESC";
 $result = $conn->query($sql);
 
 ?>
-
+ -->
 
 
 
@@ -501,10 +501,10 @@ $result = $conn->query($sql);
 
 
 
-                                <?php
+                                <!-- <?php
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
-                    ?>
+                    ?> -->
 
                                 <div class="card mt-4">
                                     <div class="card-body">
@@ -513,16 +513,16 @@ $result = $conn->query($sql);
                                                 <img class="f1" src="https://image.ibb.co/jw55Ex/def_face.jpg"
                                                     class="img img-rounded img-fluid" />
                                                 <p class="f2 ">
-                                                    <sp><?= $row["timestamp"] ?></sp>
+                                                    <!-- <sp><?= $row["timestamp"] ?></sp> -->
                                                 </p>
                                             </div>
                                             <div class="col">
 
                                                 <a class="float-left" href=""><strong>
-                                                        <p><strong><?= $row["customer_name"] ?></strong>
+                                                        <!-- <p><strong><?= $row["customer_name"] ?></strong> -->
                                                     </strong></a>
                                                 <span class="float-right text-warning">
-                                                    &nbsp; <?= $row["rating"] ?><i class="fa fa-star "> </i></span>
+                                                    <!-- &nbsp; <?= $row["rating"] ?><i class="fa fa-star "> </i></span> -->
                                                 </p>
 
 
@@ -575,13 +575,13 @@ $result = $conn->query($sql);
                                     </div>
                                 </div>
 
-                                <?php
+                                <!-- <?php
 
                               }
             } else {
                 echo "No reviews yet.";
             }
-            ?>
+            ?> -->
 
 
                             </div>
