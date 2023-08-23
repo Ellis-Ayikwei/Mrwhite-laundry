@@ -79,7 +79,7 @@ $result = $conn->query($sql);
     </style>
 </head>
 
-<body>
+<body id="page-content" style="display: none;">
     <!-- ////////////////////////////////////////////////////////////////////////////////////////
                                START SECTION 1 - THE NAVBAR SECTION  
 /////////////////////////////////////////////////////////////////////////////////////////////-->
@@ -738,6 +738,19 @@ $result = $conn->query($sql);
         }
     };
     </script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // This event listener ensures the code inside it runs when the DOM is fully loaded.
+        
+        // Get the content container
+        const contentContainer = document.getElementById("page-content");
+
+        // Show the content container by changing its style display property
+        contentContainer.style.display = "block";
+    });
+</script>
 
 
 
