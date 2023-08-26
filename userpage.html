@@ -1,177 +1,356 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>User Dashboard - Laundry and Cleaning Services</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="/assets/vendors/css/glightbox.min.css" />
-     
-  
-  
-    <style>
-      body {
-        width: 100%;
-        align-items: center;
-  background-image: url("images/suites.jpg")!important;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
+	<head>
+		<title>User Dashboard - Laundry and Cleaning Services</title>
+		<link
+			rel="stylesheet"
+			href="assets/css/style.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="assets/css/fontawesome.css"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			rel="stylesheet"
+			href="/assets/vendors/css/glightbox.min.css"
+		/>
 
-  background-blend-mode: overlay; /* Add blend mode to create the overlay */
-  background-color: rgba(0, 0, 0, 0.5);
-      }
-    </style>
-  
-  </head>
-  <body>
-    <nav
-      class="navbar navbar-expand-lg navar-collapse-sm navbar-dark menu shadow fixed-top"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="images/services/mr white.svg "alt="logo image"
-          height="50px"  width="50px"/>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Book Online</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-          
-            <div class="profile-container">
-              <img id="profile-image" width="30px" height="30px"  
-              src="images/profile-user.png" 
-              alt="profile">
-              <select id="select-list" style="display: none;">
-                <option value="option1">Option 1</option>
-                <option value="option2">Option 2</option>
-                <option value="option3">Option 3</option>
-              </select>
-            </div>
-          
-        </div>
-      </div>
-    </nav>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+			}
 
-    <div class="userpage">
-      
-      <div class="row">
-        <div class="header1 ">
-        <h1>Hello [User's Name]!</h1>
-        <p>user id:1544</p>
-      </div>
-            <!-- Additional form fields for pickup and delivery date/time, instructions, etc. -->
-           <div class="button-container col">
-            <button type="submit">Create New Booking</button>
-      
-        
-      
-          <!-- Display a list of past orders with options to repeat a specific order -->
-          <!-- Repeat Order content goes here -->
-          <button class="action-button" type="submit">Repeat Last Booking</button>
-      
-          <button class="action-button" type="submit">Track Bookings </button>
-          <button class="action-button" type="submit">Call to book</button>
-        </div>
-    </div>
-    <div class="container"></div>
-        <div class="flex-container">
-            <div class="Aos ms-2">
-              <div class="box">
-                <h2>Active Orders</h2>
-                <ul>
-                  <li>Review 1</li>
-                  <li>Review 2</li>
-                  <li>Review 3</li>
-                  <!-- Add more reviews here -->
-                </ul>
-                <!-- Display a list of active orders with status and tracking options -->
-                <!-- Active Orders content goes here -->
-                            </div>
-              </div>
-            <div class="Hy ms-2">
-              <div class="box">
-                <h2>History</h2>
-                <!-- Display helpful tips for using the services -->
-                <!-- Tips content goes here -->
-                            </div>
-              </div>
-            <div class="Nf ms-2 col">
-              <div class="nfs">
-                <div class="box">
-                  <h2>Notifications</h2>
-                                
-                                <ul>
-                  <li>Review 1</li>
-                  <li>Review 2</li>
-                  <li>Review 3</li>
-                  <!-- Add more reviews here -->
-                                </ul>
-                              </div>
-                </div>
-              <!-- Display important notifications or updates -->
-             
-              <div class="tips mt-2">
-                <div class="box">
-                  <h2>Tips</h2>
-                  <ul>
-                    <li>Review 1</li>
-                    <li>Review 2</li>
-                    <li>Review 3</li>
-                    <!-- Add more reviews here -->
-                  </ul>
-                  <!-- Display helpful tips for using the services -->
-                  <!-- Tips content goes here -->
-                </div>
-              </div> <!-- Notifications content goes here -->
-            </div>
-            
-        </div>
-      </div>
-    </div>
+			/* header {
+				background-color: #333;
+				color: rgb(0, 0, 0);
+				padding: 10px 0;
+				text-align: center;
+			}
 
+			nav {
+				background-color: #444;
+				padding: 10px;
+			}
 
+			nav ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+			}
 
-<script>
-  
-  document.getElementById("profile-image").onclick = function() {
-  var selectList = document.getElementById("select-list");
-  selectList.style.display = (selectList.style.display === "none") ? "block" : "none";
-};
-</script>
-    
-  </body>
+			nav ul li {
+				margin-right: 20px;
+			}
+
+			nav ul li a {
+				text-decoration: none;
+				color: rgb(0, 0, 0);
+			} */
+
+			.welcome-section {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				/* background-color: #f0f2f5; */
+				padding: 20px;
+				border-radius: 5px;
+				position: relative;
+				color: black;
+			}
+
+			/* .welcome-buttons button {
+				background-color: #333;
+				color: rgb(255, 255, 255);
+				border: none;
+				padding: 10px 20px;
+				margin: 0 10px;
+				cursor: pointer;
+			} */
+
+			.feed-section,
+			.notification-section,
+			.tip-section {
+				padding: 20px;
+				border-bottom: 1px solid #ccc;
+			}
+
+			.feed-section {
+				padding: 20px;
+				border-bottom: 1px solid #ccc;
+				height: 300px; /* Set a specific height for the scrollable area */
+				overflow-y: auto; /* Enable vertical scrolling */
+			}
+
+			body {
+				width: 100%;
+				background-color: aliceblue;
+			}
+		</style>
+	</head>
+	<body>
+		<nav
+			class="navbar navbar-expand-lg navar-collapse-sm navbar-dark menu shadow fixed-top"
+		>
+			<div class="container">
+				<a
+					class="navbar-brand"
+					href="#"
+				>
+					<img
+						src="images/services/mr white.svg "
+						alt="logo image"
+						height="50px"
+						width="50px"
+					/>
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNav"
+					aria-controls="navbarNav"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="collapse navbar-collapse justify-content-end"
+					id="navbarNav"
+				>
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="#"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								<i class="fas fa-bell"></i>&nbsp; notification
+							</a>
+							<ul
+								class="dropdown-menu"
+								style="opacity: 100%"
+								aria-labelledby="navbarDropdown"
+							>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>Help</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>Take a tour</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="account_settings.html"
+										>Settings</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>Log Out</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link"
+								href="#"
+								>Book Online</a
+							>
+						</li>
+
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								<img
+									id="profile-image"
+									width="30px"
+									height="30px"
+									src="images/profile-user.png"
+									alt="profile"
+								/>
+							</a>
+							<ul
+								class="dropdown-menu"
+								style="opacity: 100%"
+								aria-labelledby="navbarDropdown"
+							>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>Help</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>Take a tour</a
+									>
+								</li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="account_settings.html"
+										>Settings</a
+									>
+								</li>
+								<li><hr class="dropdown-divider" /></li>
+								<li>
+									<a
+										class="dropdown-item"
+										href="#"
+										>Log Out</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="userpage">
+			<section class="welcome-section">
+				<div class="welcome-text">
+					<h2>Welcome Mr Eddy</h2>
+				</div>
+
+				<div class="welcome-buttons">
+					<button
+						class="btn rounded-pill btn-outline-secondary"
+						type="submit"
+					>
+						Create New Booking
+					</button>
+
+					<button
+						class="btn rounded-pill action-button"
+						type="submit"
+					>
+						Repeat Last Booking
+					</button>
+
+					<button
+						class="btn rounded-pill action-button"
+						type="submit"
+					>
+						Track Bookings
+					</button>
+					<button
+						class="btn rounded-pill action-button"
+						type="submit"
+					>
+						Call to book
+					</button>
+				</div>
+			</section>
+
+			<div class="container">
+				<div class="flex-container">
+					<div class="Aos ms-2">
+						<div class="box">
+							<h2>Active Orders</h2>
+							<p class="text-center">no active orders at the momment</p>
+							<!-- Display a list of active orders with status and tracking options -->
+							<!-- Active Orders content goes here -->
+						</div>
+					</div>
+					<div class="Nf ms-2">
+						<div class="nfs">
+							<div class="box text-center">
+								<h2>Tips</h2>
+								<div
+									class="card"
+									style="height: 10%"
+								>
+									<a href=""
+										><img
+											class="card-img-top"
+											src="images/disinfecting-home.jpg"
+											alt="Card image cap"
+									/></a>
+									<div class="card-body">
+										<a href="">
+											<h4>The Side Effect Of Strong Washing Chemicals</h4>
+										</a>
+										<p class="card-text">
+											Some quick example text to build on the card title and
+											make up the bulk of the card's content.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Display important notifications or updates -->
+						<!-- <div class="box">
+									<h2>Tips</h2>
+									<ul>
+										<li>Review 1</li>
+										<li>Review 2</li>
+										<li>Review 3</li>
+									</ul>
+								</div>
+							</div><div class="tips mt-2"> -->
+						<!-- Notifications content goes here -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <script>
+			document.getElementById("profile-image").onclick = function () {
+				var selectList = document.getElementById("select-list");
+				selectList.style.display =
+					selectList.style.display === "none" ? "block" : "none";
+			};
+		</script> -->
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+	</body>
 </html>

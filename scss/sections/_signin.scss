@@ -54,6 +54,7 @@
 	margin-bottom: 200px;
 
 	.flex-container {
+		overflow: hidden;
 		margin-top: 0;
 		display: flex;
 		flex-wrap: wrap;
@@ -61,7 +62,7 @@
 		align-items: center;
 		align-content: center;
 		padding: 20px;
-		@include media-breakpoint-only(md) {
+		@include media-breakpoint-up(md) {
 			flex-wrap: nowrap;
 			align-content: space-between;
 			.img {

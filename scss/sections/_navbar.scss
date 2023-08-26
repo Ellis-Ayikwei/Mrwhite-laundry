@@ -2,8 +2,8 @@
 @use "../components/mixins" as *;
 
 .menu {
+	position: fixed;
 	background-color: white;
-	opacity: 50%;
 
 	li {
 		padding: 0 0.7rem;
@@ -56,6 +56,17 @@
 				max-height: auto;
 				overflow-y: scroll;
 				height: 100px;
+			}
+		}
+	}
+
+	.dropdown-menu {
+		opacity: 100;
+		background-blend-mode: color !important;
+
+		.dropdown-item {
+			&:hover {
+				background-color: transparent !important;
 			}
 		}
 	}
